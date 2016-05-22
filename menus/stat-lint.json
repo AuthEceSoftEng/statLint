@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle stat-lint",
+        "command": "stat-lint:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "stat-lint",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "stat-lint:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

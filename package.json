@@ -1,0 +1,22 @@
+{
+  "name": "stat-lint",
+  "main": "./lib/stat-lint",
+  "version": "0.0.0",
+  "description": "StatLint: The new statistical linter.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "stat-lint:toggle"
+  },
+  "repository": "https://github.com/jgkiliris/stat-lint",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "esprima": "2.7.2",
+    "estraverse": "4.2.0",
+    "underscore": "1.8.3",
+    "fs-extra": "0.30.0"
+  }
+}
