@@ -1,10 +1,9 @@
 {
   "name": "stat-lint",
   "main": "./lib/stat-lint",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "StatLint: The new statistical linter.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "stat-lint:toggle"
   },
