@@ -1,13 +1,13 @@
 {
-  "name": "stat-lint",
-  "main": "./lib/stat-lint",
+  "name": "statLint",
+  "main": "./lib/statLint",
   "version": "0.2.0",
   "description": "StatLint: The new statistical linter.",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "stat-lint:toggle"
+    "atom-workspace": "statLint:toggle"
   },
-  "repository": "https://github.com/jgkiliris/stat-lint",
+  "repository": "https://github.com/jgkiliris/statLint",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

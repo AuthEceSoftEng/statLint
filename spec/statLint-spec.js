@@ -1,6 +1,6 @@
 'use babel';
 
-import StatLint from '../lib/stat-lint';
+import StatLint from '../lib/statLint';
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 //
@@ -12,32 +12,32 @@ describe('StatLint', () => {
 
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace);
-    activationPromise = atom.packages.activatePackage('stat-lint');
+    activationPromise = atom.packages.activatePackage('statLint');
   });
 
-  describe('when the stat-lint:toggle event is triggered', () => {
+  describe('when the statLint:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
-      expect(workspaceElement.querySelector('.stat-lint')).not.toExist();
+      expect(workspaceElement.querySelector('.statLint')).not.toExist();
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'stat-lint:toggle');
+      atom.commands.dispatch(workspaceElement, 'statLint:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
       });
 
       runs(() => {
-        expect(workspaceElement.querySelector('.stat-lint')).toExist();
+        expect(workspaceElement.querySelector('.statLint')).toExist();
 
-        let statLintElement = workspaceElement.querySelector('.stat-lint');
+        let statLintElement = workspaceElement.querySelector('.statLint');
         expect(statLintElement).toExist();
 
         let statLintPanel = atom.workspace.panelForItem(statLintElement);
         expect(statLintPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'stat-lint:toggle');
+        atom.commands.dispatch(workspaceElement, 'statLint:toggle');
         expect(statLintPanel.isVisible()).toBe(false);
       });
     });
@@ -51,11 +51,11 @@ describe('StatLint', () => {
       // workspaceElement to the DOM are generally slower than those off DOM.
       jasmine.attachToDOM(workspaceElement);
 
-      expect(workspaceElement.querySelector('.stat-lint')).not.toExist();
+      expect(workspaceElement.querySelector('.statLint')).not.toExist();
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'stat-lint:toggle');
+      atom.commands.dispatch(workspaceElement, 'statLint:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -63,9 +63,9 @@ describe('StatLint', () => {
 
       runs(() => {
         // Now we can test for view visibility
-        let statLintElement = workspaceElement.querySelector('.stat-lint');
+        let statLintElement = workspaceElement.querySelector('.statLint');
         expect(statLintElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'stat-lint:toggle');
+        atom.commands.dispatch(workspaceElement, 'statLint:toggle');
         expect(statLintElement).not.toBeVisible();
       });
     });

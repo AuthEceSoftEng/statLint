@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle stat-lint",
-        "command": "stat-lint:toggle"
+        "label": "Toggle statLint",
+        "command": "statLint:toggle"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "stat-lint",
+          "label": "statLint",
           "submenu": [
             {
               "label": "Toggle",
-              "command": "stat-lint:toggle"
+              "command": "statLint:toggle"
             }
           ]
         }
