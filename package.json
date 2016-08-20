@@ -1,7 +1,7 @@
 {
   "name": "statLint",
   "main": "./lib/statLint",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "StatLint: The new statistical linter.",
   "keywords": [],
   "activationCommands": {
@@ -17,6 +17,6 @@
     "estraverse": "4.2.0",
     "underscore": "1.8.3",
     "fs-extra": "0.30.0",
-    "atom-message-panel" : "1.2.4"
+    "atom-message-panel": "1.2.4"
   }
 }
