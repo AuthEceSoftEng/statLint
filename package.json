@@ -16,6 +16,7 @@
     "esprima": "2.7.2",
     "estraverse": "4.2.0",
     "underscore": "1.8.3",
-    "fs-extra": "0.30.0"
+    "fs-extra": "0.30.0",
+    "atom-message-panel" : "1.2.4"
   }
 }
