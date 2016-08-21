@@ -1,11 +1,7 @@
 {
   "name": "statLint",
   "main": "./lib/statLint",
-<<<<<<< HEAD
-  "version": "0.6.0",
-=======
   "version": "0.5.0",
->>>>>>> 9561316b0d2930944ff3f53269a85528548146e5
   "description": "StatLint: The new statistical linter.",
   "keywords": [],
   "activationCommands": {
