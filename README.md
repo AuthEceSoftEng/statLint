@@ -1,6 +1,6 @@
 # statLint package
 
-StatLint: The new statistical linter for JavaScript.
+statLint: The new statistical linter for JavaScript.
 
 It detects unlikely usage of various API Methods. It also looks for unlikely names used in variable declarations.  
 
